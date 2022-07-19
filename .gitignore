@@ -1,3 +1,25 @@
+#java
+**/build/
+**out/
+
+#Serenity reports
+**/target/
+
+#Gradle
+**/.gradle/
+
+#IntelliJ IDEA
+**/.idea/
+**/history/
+**/.settings/
+**/.classpath/
+**/bin/
+**/.project
+
+
+
+
+
 # Compiled class file
 *.class
 
