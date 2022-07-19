@@ -11,6 +11,8 @@ https://pokeapi.co/api/v2/pokemon/{name}
 
 ## POST 
 JSON PLACEHOLDER API.
+
+https://jsonplaceholder.typicode.com/posts
 - Validate the successful creation of a post
   - Status 201
   - Request: title: #string, body: #string, userId: number

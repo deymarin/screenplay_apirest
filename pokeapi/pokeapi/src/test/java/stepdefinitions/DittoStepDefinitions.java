@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import org.hamcrest.Matchers;
 import questions.ValidateAbilities;
 import questions.ValidateHeldItems;
-import tasks.GetApi;
+import interactions.GetApi;
 import utils.Constants;
 
 public class DittoStepDefinitions {

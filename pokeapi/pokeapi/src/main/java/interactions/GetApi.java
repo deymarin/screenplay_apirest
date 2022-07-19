@@ -1,4 +1,4 @@
-package tasks;
+package interactions;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;

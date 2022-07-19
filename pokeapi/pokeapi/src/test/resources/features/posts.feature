@@ -6,5 +6,6 @@ Feature: PlaceholderAPI
     When i send the post information <title>, <body> and <userId>
     Then i should create the post successfully
     Examples:
-      | title               | body  | userId |
-      | hate to be lame but | lizzy | 11     |
+      | title               | body   | userId |
+      | hate to be lame     | lizzy  | 11     |
+      | crying isn't like u | billie | 11     |

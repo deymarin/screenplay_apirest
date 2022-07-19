@@ -1,11 +1,11 @@
 package tasks;
 
+import interactions.PostApi;
 import models.requests.PostRequest;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import org.jline.utils.Log;
 import utils.Constants;
 
 import static utils.Constants.POST_REQUEST;
@@ -25,7 +25,6 @@ public class PostsPlaceHolder implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         PostRequest postRequest = new PostRequest(body,name,userId);
-        Log.info("POST REQUEST: " + postRequest);
         actor.attemptsTo(PostApi.with(Constants.PLACE_URI,"posts",postRequest));
         actor.remember(STATUS,SerenityRest.lastResponse().statusCode());
         actor.remember(POST_REQUEST,postRequest);
