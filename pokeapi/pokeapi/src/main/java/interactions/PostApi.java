@@ -1,14 +1,12 @@
 package interactions;
 
 import io.restassured.mapper.ObjectMapperType;
-import models.responses.PostResponse;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.interactions.Post;
-import org.jline.utils.Log;
 import userinterfaces.HeadersPlaceHolder;
 
 import java.util.Map;
@@ -16,7 +14,8 @@ import java.util.Map;
 import static utils.Constants.LAST_RESPONSE_POST;
 
 public class PostApi implements Task {
-    private String baseURL, resource;
+    private String baseURL;
+    private String resource;
     private Object requestPosts;
     private Map<String, String> headers;
 

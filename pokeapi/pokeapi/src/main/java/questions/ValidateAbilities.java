@@ -26,7 +26,7 @@ public class ValidateAbilities implements Question<Boolean> {
                 Arrays.asList("limber","imposter")
         );
         for(Ability ability: pokeResponse.getAbilities()){
-            abilitiesList.add(ability.getAbility().getName());
+            abilitiesList.add(ability.getAbilityValue().getName());
         }
         Collections.sort(abilitiesList);
         Collections.sort(abilitiesExpected);

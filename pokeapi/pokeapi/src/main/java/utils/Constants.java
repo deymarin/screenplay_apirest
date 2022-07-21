@@ -2,6 +2,10 @@ package utils;
 
 public class Constants {
 
+    private Constants(){
+
+    }
+
     //PokeAPI
     public static final String POKE_URI = "https://pokeapi.co/api/v2/pokemon/";
 

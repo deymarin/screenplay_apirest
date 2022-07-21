@@ -13,7 +13,8 @@ import static utils.Constants.STATUS;
 
 public class PostsPlaceHolder implements Task {
 
-    private String body, name;
+    private String body;
+    private String name;
     private Integer userId;
 
     public PostsPlaceHolder(String body, String name, Integer userId) {
