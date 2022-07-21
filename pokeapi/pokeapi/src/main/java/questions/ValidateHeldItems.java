@@ -32,10 +32,9 @@ public class ValidateHeldItems implements Question<Boolean> {
         Collections.sort(heldItemExpected);
         Log.info("LIST GET: " + heldItemList);
         Log.info("LIST EXPECTED: " + heldItemExpected);
-        boolean result = heldItemList.contains(heldItemExpected.get(0)) &&
+        return heldItemList.contains(heldItemExpected.get(0)) &&
                 heldItemList.contains(heldItemExpected.get(1)) &&
                 heldItemList.contains(heldItemExpected.get(2));
-        return result;
     }
 
     public static ValidateHeldItems with(){

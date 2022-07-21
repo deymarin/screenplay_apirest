@@ -7,15 +7,16 @@ import lombok.Data;
 @Data
 public class Ability {
     @Expose
-    private NameUrl ability;
+    @SerializedName("ability")
+    private NameUrl abilityValue;
     @Expose
     @SerializedName("is_hidden")
     private Boolean isHidden;
     @Expose
     private String slot;
 
-    public NameUrl getAbility() {
-        return ability;
+    public NameUrl getAbilityValue() {
+        return abilityValue;
     }
 
     public Boolean getHidden() {
@@ -29,7 +30,7 @@ public class Ability {
     @Override
     public String toString() {
         return "Ability{" +
-                "ability=" + ability +
+                "ability=" + abilityValue +
                 ", isHidden=" + isHidden +
                 ", slot='" + slot + '\'' +
                 '}';

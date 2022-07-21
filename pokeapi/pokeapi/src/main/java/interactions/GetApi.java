@@ -11,7 +11,8 @@ import static utils.Constants.LAST_RESPONSE;
 
 public class GetApi implements Task {
 
-    private String baseURL, resource;
+    private String baseURL;
+    private String resource;
 
     public GetApi(String baseURL, String resource) {
         this.baseURL = baseURL;
